@@ -1,0 +1,10 @@
+
+title Exercise.06
+Browser->Server:  HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over Server:
+server get new note (JSON-data)
+end note over 
+Server->Server:parse json data no redirect 
+Server->Browser: response with status:201(created)
+note over Browser:event handler render data
+end note
